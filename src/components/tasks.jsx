@@ -2,10 +2,10 @@ import { Button } from "@nextui-org/react";
 import { Input } from "@nextui-org/react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { RadioGroup, Radio } from "@nextui-org/react";
-import { CheckboxGroup, Checkbox } from "@nextui-org/react";
 import { useRouter } from "next/router";
+
 export default function Tasks() {
+  
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
   useEffect(() => {
